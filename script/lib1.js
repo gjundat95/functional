@@ -1,0 +1,21 @@
+const add = (x,y)=>x+y;
+const isNull = x => x == null;
+const isEven = x => x%2 === 0;
+const isDivisibleBy = (divisor, num) => num % divisor === 0;
+const square = x => x*x;
+const cube = x => x*x*x;
+const stringConcat = (x, y) => `${x}`+`${y}`;
+const arrayAppend = (xs, x) => [...xs, x];
+const arrayPrepend = (xs, x) => [x, ...xs];
+const printTable = xs => console.table(xs);
+const now = () => new Date();
+const getRandomNumber = () => Math.floor(Math.random() * 100 + 1);
+
+console.log(add(5, 6));
+console.log(isEven(5));
+console.log(isDivisibleBy(6,12));
+console.log(stringConcat('tinh','ngo'));
+console.log(arrayAppend([1,2,3], 4));
+console.log(printTable([{'name':'tinhgno'}]));
+console.log(now());
+console.log(getRandomNumber());
