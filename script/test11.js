@@ -34,3 +34,9 @@ var o3 = { c: 3 };
 var obj = Object.assign({}, o1, o2, o3);
 console.log(obj); // { a: 1, b: 2, c: 3 }
 console.log(o1); // { a: 1, b: 2, c: 3 }
+
+
+let o4 = {a: 1, b: 2};
+let o5 = {a: 2, c:4};
+let o6 = {...o4};
+console.log(o6);
